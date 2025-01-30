@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiber Arts Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ </head>
+<body>
+  <h1 id="title">Fiber Arts Survey Form</h1>
+  <p id="description">This survey aims to gather valuable data to determine popular forms for fiber arts and types of yarns used. Thank you for taking the time to complete this survey.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name 
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label" for="email">Email 
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+      </label>
+      <label id="number-label" for="number">Age 
+        <input id="number" name="number" type="number" placeholder="Enter your age" min="10" max="120" required />
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Please choose a skill level that best represents you.
+          <select id="dropdown" name="dropdown">
+            <option value="">Select a skill level</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4">Expert</option>
+          </select>
+        </label>
+    </fieldset>
+    <fieldset>
+      <legend>What forms of fiber arts do you enjoy?</legend>
+      <label for="crochet">
+        <input class="inline" id="crochet" type="checkbox" required name="checkbox" value="1" /> crochet
+      </label>
+      <label for="embroidery">
+        <input class="inline" id="embroidery" type="checkbox" required name="checkbox" value="2" /> embroidery
+      </label>
+      <label for="felting">
+        <input class="inline" id="felting" type="checkbox" required name="checkbox" value="3" /> felting
+      </label>
+      <label for="knit">
+        <input class="inline" id="knit" type="checkbox" required name="checkbox" value="4" /> knit
+      </label>
+      <label for="lace-making">
+        <input class="inline" id="lace-making" type="checkbox" required name="checkbox" value="5" /> lace-making
+      </label>
+      <label for="macrame">
+        <input class="inline" id="macrame" type="checkbox" required name="checkbox" value="6" /> macrame
+      </label>
+      <label for="quilting">
+        <input class="inline" id="quilting" type="checkbox" required name="checkbox" value="7" /> quilting
+      </label>
+      <label for="sewing">
+        <input class="inline" id="sewing" type="checkbox" required name="checkbox" value="8" /> sewing
+      </label>
+      <label for="weaving">
+        <input class="inline" id="weaving" type="checkbox" required name="checkbox" value="9" /> weaving
+      </label>
+      <label for="other-checkbox">
+        <input class="inline" id="other-checkbox" type="checkbox" required name="checkbox" value="10" /> other
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>What is your favorite material to work with?</legend>
+      <label for="embroidery-thread">
+        <input id="embroidery-thread" type="radio" name="material-type" class="inline" value="1" checked /> embroidery thread
+      </label>
+      <label for="fabric">
+        <input id="fabric" type="radio" name="material-type" class="inline" value="2 "/> fabric
+      </label>
+      <label for="felt">
+        <input id="felt" type="radio" name="material-type" class="inline" value="3" /> felt
+      </label>
+      <label for="lace-thread">
+        <input id="lace-thread" type="radio" name="material-type" class="inline" value="4" /> lace thread
+      </label>
+      <label for="thread">
+        <input id="thread" type="radio" name="material-type" class="inline" value="5" /> thread
+      </label>
+      <label for="yarn">
+        <input id="yarn" type="radio" name="material-type" class="inline" value="6" /> yarn
+      </label>
+      <label for="warp-thread">
+        <input id="warp-thread" type="radio" name="material-type" class="inline" value="7" /> warp thread
+      </label>
+      <label for="other-radio">
+        <input id="other-radio" type="radio" name="material-type" class="inline" value="8" /> other
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Any comments or suggestions?</legend>
+      <label for="comments">
+          <textarea id="comments" name="comments" rows="3" cols="5" placeholder="Comments..."></textarea>
+       </label>
+      <input id="submit" type="submit" value="Submit" />
+    </fieldset>
+  </form>
+</body>
+</html>
